@@ -1,91 +1,175 @@
-body{
-    margin: 0;
-    box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 @font-face {
-    font-family:'alex';
-    src: url(/fonts/AlexBrush-Regular.ttf);
+  font-family: "alex";
+  src: url(/fonts/AlexBrush-Regular.ttf);
 }
-#header{
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 20vh;
-width: 100%;
-background-color: black;
-position: sticky;
-z-index: 999;
-top: 0;
-left: 0;
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
 }
 
-.logo{
-    width: 50%;
+.logo {
+  width: 50%;
 }
 /* .logo kanejner / gjersia e iamzhit/ margin-left imazhi te jete pak me djathtas*/
-.logo img{
-    width: 400px;
-    margin-left: 10px;
+.logo img {
+  width: 400px;
+  margin-left: 10px;
 }
 
-#navbar{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
+#navbar {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.nav{
-    margin-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-   list-style-type: none;
+.nav {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  list-style-type: none;
 }
 
-.nav a{
-    text-decoration: solid underline;
-    text-decoration-color: beige;
-    color: white;
-
+.nav a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
 }
-.navitem{
-    background-color:black;
-    padding: 10px 20px;
-    font-weight: bold;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    color: white;
+.nav a:hover {
+  color: rgb(128, 128, 128);
 }
-
-.slogan{
-    width: 100%;
-}
-.slogan h1{
-    font-family: 'alex';
-    text-align: center;
-    font-size: 60px;
+.navitem {
+  background-color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 3px;
 }
 
-#hero-banner{
-    width: 100%;
-    height: 70vh;
-    background-image: url(/images/sunlight-leaf-shadows-beige-wall-minimalistic-nature-inspired-background_97843-60339.avif);
-    background-size: cover;
-    background-position: center;
-    padding-top: 10rem;
+.navitem.active {
+  color: rgb(128, 128, 128);
 }
 
-button.primary{
-    padding: 1.5rem 2rem;
-    background-color: black;
-    border: 5px;
-    border-radius: 3px;
-    color: white;
-    font-size: 1rem;
-    margin-right: auto;
-    margin-left: auto;
+.slogan {
+  width: 100%;
+}
+.slogan h1 {
+  font-family: "alex";
+  text-align: center;
+  font-size: 60px;
+}
+
+#hero-banner {
+  width: 100%;
+  height: 70vh;
+  background-image: url(/images/sunlight-leaf-shadows-beige-wall-minimalistic-nature-inspired-background_97843-60339.avif);
+  background-size: cover;
+  background-position: center;
+  padding-top: 10rem;
+}
+
+button.primary {
+  padding: 1.5rem 2rem;
+  background-color: black;
+  border: 5px;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  transition: 0.5s;
+}
+
+button.primary:hover {
+  cursor: pointer;
+  background-color: rgb(128, 128, 128);
+}
+
+#featuredProd {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10vh;
+  scroll-margin-top: 15vh;
+}
+
+#featuredProd h1 {
+  font-family: "alex";
+  text-align: center;
+  font-size: 60px;
+}
+
+#featuredProd .productsx4 {
+  width: 100%;
+  height: 55vh;
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5vh;
+}
+
+#featuredProd .productsx4 .prodCard {
+  width: 20%;
+  height: 54vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 15%;
+  box-shadow: 3px 4px rgb(68, 68, 68);
+}
+
+#featuredProd .productsx4 .prodCard img {
+  width: 70%;
+}
+
+#featuredProd .productsx4 .prodCard h3 {
+  font-family: "alex";
+  margin: 1.5vh 0vh;
+}
+#featuredProd .productsx4 .prodCard p {
+  margin: 0 1vw;
+  font-size: 0.8rem;
+  font-family: "alex";
+}
+#featuredProd .productsx4 .prodCard a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2vh;
+  margin-right: 3vw;
+}
+#featuredProd .productsx4 .prodCard i {
+  border: 1px solid black;
+  border-radius: 15%;
+  padding: 7px;
+  transition: 0.5s;
+}
+
+#featuredProd .productsx4 .prodCard i:hover {
+  cursor: pointer;
+  color: rgb(128, 128, 128);
+  scale: 1.05;
+  border-color: rgb(181, 181, 181);
 }
