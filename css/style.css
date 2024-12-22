@@ -173,3 +173,71 @@ button.primary:hover {
   scale: 1.05;
   border-color: rgb(181, 181, 181);
 }
+
+#promo-banner {
+  background-image: url(/images/promo-banner.jpg);
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-content {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc, 2px 2px 2px rgba(255, 255, 255, 0),
+    2px 2px 2px rgba(255, 255, 255, 0);
+  color: #f4f3ff;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-section p {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #ccc;
+}
+
+.footer-bottom {
+  font-size: 0.8em;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
